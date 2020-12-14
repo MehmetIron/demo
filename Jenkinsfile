@@ -6,7 +6,7 @@ pipeline {
         stage('creating ECR Repository') {
             steps {
                 echo 'creating ECR Repository'
-                sh 'echo $(GIT_URL)'
+                sh 'touch demo.txt'
             }
         }
         stage('building Docker Image') {
